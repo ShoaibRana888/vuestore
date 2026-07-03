@@ -2,13 +2,11 @@
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useCartStore } from '@/stores/cart'
-import { useAuthStore } from '@/stores/auth'
 import api from '@/services/api'
 import { loadStripe } from '@stripe/stripe-js'
 
 const router = useRouter()
 const cartStore = useCartStore()
-const authStore = useAuthStore()
 
 const step = ref(1)
 const loading = ref(false)

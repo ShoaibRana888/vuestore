@@ -115,7 +115,7 @@ onMounted(fetchCategories)
             <td class="px-6 py-4 text-sm text-gray-600">
               {{ category.parent_id ? categories.find(c => c.id === category.parent_id)?.name : '-' }}
             </td>
-            <td class="px-6 py-4 text-sm text-gray-600">{{ category.products_count || 0 }}</td>
+            <td class="px-6 py-4 text-sm text-gray-600">{{ category.product_count || 0 }}</td>
             <td class="px-6 py-4 text-right">
               <button @click="openEditModal(category)" class="text-primary-600 hover:text-primary-800 mr-3">Edit</button>
               <button @click="deleteCategory(category.id)" class="text-red-600 hover:text-red-800">Delete</button>

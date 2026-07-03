@@ -74,7 +74,7 @@ onMounted(fetchOrders)
           <div class="flex items-center gap-4">
             <div class="flex -space-x-2">
               <div 
-                v-for="(item, index) in order.items?.slice(0, 3)" 
+                v-for="item in order.items?.slice(0, 3)"
                 :key="item.id"
                 class="w-12 h-12 rounded-lg border-2 border-white bg-gray-100 overflow-hidden"
               >

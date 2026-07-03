@@ -1,0 +1,1 @@
+import{_ as s,a as o,c as a,b as t}from"./index-C70fLv_j.js";const n={},c={class:"container-custom py-8"};function r(d,e){return o(),a("div",c,[...e[0]||(e[0]=[t("h1",{class:"text-2xl font-bold"},"NotFoundView",-1),t("p",{class:"text-gray-600 mt-2"},"This view is a placeholder. Implement as needed.",-1)])])}const i=s(n,[["render",r]]);export{i as default};

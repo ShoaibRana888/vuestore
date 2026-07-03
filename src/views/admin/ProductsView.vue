@@ -281,7 +281,7 @@ onMounted(() => {
             <!-- Images -->
             <div>
               <label class="label">Image URLs</label>
-              <div v-for="(img, index) in form.images" :key="index" class="flex gap-2 mb-2">
+              <div v-for="(_img, index) in form.images" :key="index" class="flex gap-2 mb-2">
                 <input 
                   v-model="form.images[index]" 
                   type="url" 

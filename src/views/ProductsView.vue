@@ -139,8 +139,8 @@ onMounted(() => {
                   class="text-primary-600 focus:ring-primary-500"
                 />
                 <span class="ml-2 text-gray-700">{{ category.name }}</span>
-                <span v-if="category.products_count !== undefined" class="ml-auto text-gray-400 text-sm">
-                  ({{ category.products_count }})
+                <span v-if="category.product_count !== undefined" class="ml-auto text-gray-400 text-sm">
+                  ({{ category.product_count }})
                 </span>
               </label>
             </div>

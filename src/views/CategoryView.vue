@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { ref, watch, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
 import { useProductStore } from '@/stores/products'
 import ProductCard from '@/components/product/ProductCard.vue'
 
 const props = defineProps<{ slug: string }>()
-const route = useRoute()
 const productStore = useProductStore()
 
 const category = ref<any>(null)
@@ -29,7 +27,7 @@ const fetchCategory = async () => {
 
 const fetchProducts = async () => {
   const [sort, order] = currentSort.value.split('-')
-  await productStore.fetchProductsByCategory(props.slug, { sort, order })
+  await productStore.fetchProductsByCategory(props.slug, { sort, order: order as 'asc' | 'desc' })
 }
 
 watch(() => props.slug, () => {

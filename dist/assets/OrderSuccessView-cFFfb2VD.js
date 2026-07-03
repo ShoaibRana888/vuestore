@@ -1,0 +1,1 @@
+import{_ as t,a as c,c as r,b as s}from"./index-C70fLv_j.js";const a={},o={class:"container-custom py-8"};function n(d,e){return c(),r("div",o,[...e[0]||(e[0]=[s("h1",{class:"text-2xl font-bold"},"OrderSuccessView",-1),s("p",{class:"text-gray-600 mt-2"},"This view is a placeholder. Implement as needed.",-1)])])}const i=t(a,[["render",n]]);export{i as default};

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, computed } from 'vue'
+import { onMounted } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
 import { useCartStore } from '@/stores/cart'
 import { useAuthStore } from '@/stores/auth'
@@ -7,10 +7,6 @@ import { useAuthStore } from '@/stores/auth'
 const router = useRouter()
 const cartStore = useCartStore()
 const authStore = useAuthStore()
-
-const canCheckout = computed(() => {
-  return authStore.isAuthenticated && !cartStore.isEmpty
-})
 
 const updateQuantity = async (itemId: number, quantity: number) => {
   if (quantity < 1) return
